@@ -2,7 +2,8 @@ Hiera Debug Functions
 ====================================
 
 I wrote a very simple wrapper function for hiera that will output debug
-information into $logidr/hiera_debug_stephensmacbook.
+information into $logidr/hiera_debug_stephensmacbook. This file will be 
+overwritten on every puppet run. 
 
 This includes the scope of the hiera call the default value and the value
 actually found. 
