@@ -6,7 +6,7 @@ module Puppet::Parser::Functions
                 wrapper around hiera to allow for writting info to file
               EOS
              ) do |arguments|
-  	        	Puppet::Parser::Functions.autoloader.load(:hiera) unless Puppet::Parser::Functions.autoloader.loaded?(:hiera)
+  	        	Puppet::Parser::Functions.autoloader.load(:hiera_include) unless Puppet::Parser::Functions.autoloader.loaded?(:hiera_iclude)
   	        	debug("Calling hiera")
             	lookup = function_hiera_include(arguments)
             	debug("Calling hiera_debug")
